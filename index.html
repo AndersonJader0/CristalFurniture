@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--JAVASCRIPT-->
+    <script src="/scripts/script-moveis.js"></script>
+    <script src="/scripts/menu-lateral.js"></script>
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--ICONS AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--SEO-->
+    <title>Cristal Furniture</title>
+    <meta name="author" content="Anderson Jader">
+    <meta name="description" content="lorem ipsum lorem ipsum lorem ipsum">
+    <meta name="keywords" content="lorem ipsum lorem ipsum">
 </head>
 <body>
-    
+    <nav class="menu">
+        <div class="offert">
+            <p class="offert-text">Móveis com 30% de promoção!</p>
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+
+        <div class="m-main">
+            <i class="fa-solid fa-bars" onclick="openTeste()"></i>
+            <i class="fa-solid fa-xmark" onclick="openTeste()"></i>
+            <h2>Cristal Furniture</h2>
+            <p>Login<i class="fa-solid fa-user"></i></p>
+        </div>
+
+        <div class="m-secondary">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<i class="fa-solid fa-sort-down"></i></p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+        </div>
+
+        <div class="m-left">
+            <p><i class="fa-solid fa-magnifying-glass"></i>Pesquisar</p>
+            <p><i class="fa-solid fa-cart-shopping top"></i>Ver carrinho</p>
+            <p><i class="fa-solid fa-heart top"></i></i>Favoritos</p>
+        </div>
+    </nav>
+
+    <header>
+        <div class="novidades">
+        <img src="/imgs/photo1.png">
+        <img src="/imgs/photo2.png">
+        <img src="/imgs/photo3.png">
+        </div>
+
+        <h2 class="title">Por sessão</h2>
+
+        <div class="groups">
+            <div class="gp-content">
+                <div class="gp beds">
+                </div>
+                <p>Beds</p>
+                
+            </div>
+
+            <div class="gp-content">
+                <div class="gp sofas">
+                </div>
+                <p>Sofas</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp chairs">
+                </div>
+                <p>Chairs</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp tables">
+                </div>
+                <p>Tables</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp shelves">
+                </div>
+                <p>Shelves</p>
+            </div>
+        </div>
+
+        <h2 class="t-best-selled">Os mais vendidos</h2>
+        <div class="best-selled">
+            <div class="sofa">
+                <p><span>R$</span> 359,99</p>
+                <p class="name">Lorem ipsum</p>
+            </div>
+            <div class="bed">
+                <p><span>R$</span> 359,99</p>
+                <p class="name">Lorem ipsum</p>
+            </div">
+        </div>
+    </header>
+    <main>
+        <h2 class="m-title">Móveis</h2>
+
+        <div class="container-externo">
+            <i class="fa-solid fa-heart top" onclick="heart()"></i>
+            <i class="fa-solid fa-cart-shopping top" onclick="car()"></i>
+            <i class="fa-solid fa-angle-right" onclick="change('direita')"></i>
+            <i class="fa-solid fa-angle-left" onclick="change('esquerda')"></i>
+            <div class="container-interno">
+                <img src="/imgs/sofaScroll.jpg">
+                <img src="/imgs/bed2.jpg">
+                <img src="/imgs/furniture.jpg">
+                <img src="/imgs/conjunto.jpg">
+                <img src="/imgs/shelve.jpg">
+            </div>
+        </div>
+    </main>
 </body>
 </html>

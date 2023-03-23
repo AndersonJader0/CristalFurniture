@@ -1,0 +1,66 @@
+main{
+    font-family: "Poppins";
+    .m-title{
+        color: #8c52ff;
+        padding: .5em;
+        text-align: center;
+        background-color: white;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    .container-externo{
+        width: 100vw;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+    }
+    .container-interno{
+        width: 100vw;
+        height: 250px;
+        display: flex;
+        flex-direction:row;
+        transition: .25s linear;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    i{
+        font-size: 2em;
+        position: absolute;
+        padding: .5em;
+        background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2));
+        color:#8c52ff;
+        z-index: 2;
+    }
+}
+
+.fa-angle-right{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fa-angle-left{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top{
+    top: .3em;
+    border-radius: 50%;
+    padding: .2;
+    font-size: 1.5em;
+    color: rgb(92, 92, 92);
+}
+
+.fa-cart-shopping{
+    right: .3em;
+}
+
+.fa-heart{
+    left: .3em;
+}
