@@ -42,13 +42,14 @@ header{
             transform: translateX(0);
         }
     }
+    
     .title{
         background-color: white;
         color: #8c52ff;
         font-size: 1.1em;
         font-weight: 600;
         text-align: center;
-        padding: .5em;
+        padding: .7em;
     }
     
     .groups{
@@ -114,17 +115,17 @@ header{
         font-size: 1.1em;
         font-weight: 600;
         text-align: center;
-        padding: .5em;
+        padding: .7em;
     }
     
     .best-selled{
         display: flex;
         flex-direction: row;
-        position: relative;
         .sofa{
             background-image: url(/imgs/sofa.jpg);
             background-position: center;
             background-size:cover;
+            position: relative;
             width: 49%;
             height: 145px;
             p{
@@ -143,10 +144,11 @@ header{
             height: 145px;
             margin: 0;
             padding: 0;
+            position: relative;
             p{
                 color: white;
                 font-weight: 600;
-                padding: .4em;
+                padding: .5em;
                 background-image: linear-gradient(rgba(157, 50, 252, 0.7),rgba(149, 28, 255, 0.8));
             };
         }

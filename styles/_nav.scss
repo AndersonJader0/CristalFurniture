@@ -59,7 +59,7 @@
 
 .m-secondary{
     background-color: #8c52ff;
-    height: 6vh;
+    height: 7vh;
     overflow: auto;
     white-space: nowrap;
     p{
@@ -79,18 +79,18 @@
 
 .m-left{
     top: 14vh;
-    width: 0%;
-    height: 100vh;
-    padding: 0;
+    width: 70%;
+    height: 0vh;
+    padding: 0 2em;
     background-color: white;
     position: absolute;
     z-index: 2;
     overflow: hidden;
-    transition: width .25s linear;
     text-align: center;
+    transition: all .4s linear;
     i{
         background: #8c52ff;
-        padding: .3em;
+        padding: .9em .9em .9em 0;
         border-radius: 50%;
         color: white;
         text-align: center;
@@ -103,5 +103,42 @@
         margin-top: 1em;
         border-radius: 2em;
     }
-}
 
+    .contatos{
+        background: none;
+        bottom: 2em;
+        i{
+            font-size: 1.3em;
+            text-align: center;
+            padding: .3em;
+            margin: .3em;
+        }
+    }
+
+    .carrinho{
+        margin-top: .4em;
+        padding: 0;
+        background-color: #8c52ff;
+        color: white;
+        text-align: center;
+        font-size: .8em;
+        i{
+            font-size: .8em;
+            margin-left: 1em;
+            text-align: center;
+        }
+    }
+
+    form{
+        margin-top: 1em;
+    }
+
+    #search{
+        width: 100%;
+        height: 3.5em;
+        border-radius: 2em;
+        outline: none;
+        border: 1px solid #8c52ff;
+        padding: 0 1em;
+    }
+}

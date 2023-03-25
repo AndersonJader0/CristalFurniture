@@ -2,7 +2,7 @@ main{
     font-family: "Poppins";
     .m-title{
         color: #8c52ff;
-        padding: .5em;
+        padding: .7em;
         text-align: center;
         background-color: white;
         font-weight: 600;
@@ -14,6 +14,14 @@ main{
         height: 250px;
         position: relative;
         overflow: hidden;
+        p{
+            position: absolute;
+            font-size: 1.1em;
+            bottom: .5em;
+            color: white;
+            margin-left: .5em;
+            text-shadow: 1px 1px 1px black;
+        }
     }
     .container-interno{
         width: 100vw;
@@ -63,4 +71,46 @@ main{
 
 .fa-heart{
     left: .3em;
+}
+
+.fa-star, .fa-star-half-stroke{
+    position: absolute;
+    bottom: 0;
+    background: none;
+    color: yellow;
+    font-size: 1.2em;
+}
+
+.star1{
+    left: 1.5em;
+}
+
+.star2{
+    left: 2.6em;
+}
+
+.star3{
+    left: 3.7em;
+}
+
+.star4{
+    left: 4.8em;
+}
+
+.star5{
+    left: 5.9em;
+}
+
+.star6{
+    left: 5.9em;
+    display: none;
+}
+
+.description, .description2{
+    background-image: linear-gradient(to left, rgba(125, 28, 169, 0.9), rgba(117, 17, 121, 0.5));
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: .8em;
 }

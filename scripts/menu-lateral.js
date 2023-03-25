@@ -6,16 +6,14 @@ function openTeste(){
     var sandwich = document.querySelector('.fa-bars');
 
     if(isOpen == false){
-    menuLeft.style.width = "50%";
-    menuLeft.style.padding = "2em";
+    menuLeft.style.height = "90vh";
     menuX.style.display = 'flex';
     sandwich.style.display = 'none';
     isOpen = true;
     }else{
-        menuLeft.style.width = "0";
-        menuLeft.style.padding = "0";
+        menuLeft.style.height = "0";
         isOpen = false;
         menuX.style.display = 'none';
-    sandwich.style.display = 'flex';
+        sandwich.style.display = 'flex';
     }
 }

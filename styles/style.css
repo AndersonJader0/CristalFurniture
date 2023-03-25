@@ -58,7 +58,7 @@
 
 .m-secondary {
   background-color: #8c52ff;
-  height: 6vh;
+  height: 7vh;
   overflow: auto;
   white-space: nowrap;
 }
@@ -77,19 +77,19 @@
 
 .m-left {
   top: 14vh;
-  width: 0%;
-  height: 100vh;
-  padding: 0;
+  width: 70%;
+  height: 0vh;
+  padding: 0 2em;
   background-color: white;
   position: absolute;
   z-index: 2;
   overflow: hidden;
-  transition: width 0.25s linear;
   text-align: center;
+  transition: all 0.4s linear;
 }
 .m-left i {
   background: #8c52ff;
-  padding: 0.3em;
+  padding: 0.9em 0.9em 0.9em 0;
   border-radius: 50%;
   color: white;
   text-align: center;
@@ -101,6 +101,40 @@
   font-size: 1em;
   margin-top: 1em;
   border-radius: 2em;
+}
+.m-left .contatos {
+  background: none;
+  bottom: 2em;
+}
+.m-left .contatos i {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0.3em;
+  margin: 0.3em;
+}
+.m-left .carrinho {
+  margin-top: 0.4em;
+  padding: 0;
+  background-color: #8c52ff;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+}
+.m-left .carrinho i {
+  font-size: 0.8em;
+  margin-left: 1em;
+  text-align: center;
+}
+.m-left form {
+  margin-top: 1em;
+}
+.m-left #search {
+  width: 100%;
+  height: 3.5em;
+  border-radius: 2em;
+  outline: none;
+  border: 1px solid #8c52ff;
+  padding: 0 1em;
 }
 
 header {
@@ -151,7 +185,7 @@ header .title {
   font-size: 1.1em;
   font-weight: 600;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.7em;
 }
 header .groups {
   overflow: auto;
@@ -207,17 +241,17 @@ header .t-best-selled {
   font-size: 1.1em;
   font-weight: 600;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.7em;
 }
 header .best-selled {
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 header .best-selled .sofa {
   background-image: url(/imgs/sofa.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
   width: 49%;
   height: 145px;
 }
@@ -235,11 +269,12 @@ header .best-selled .bed {
   height: 145px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 header .best-selled .bed p {
   color: white;
   font-weight: 600;
-  padding: 0.4em;
+  padding: 0.5em;
   background-image: linear-gradient(rgba(157, 50, 252, 0.7), rgba(149, 28, 255, 0.8));
 }
 header .best-selled .name {
@@ -252,7 +287,7 @@ main {
 }
 main .m-title {
   color: #8c52ff;
-  padding: 0.5em;
+  padding: 0.7em;
   text-align: center;
   background-color: white;
   font-weight: 600;
@@ -263,6 +298,14 @@ main .container-externo {
   height: 250px;
   position: relative;
   overflow: hidden;
+}
+main .container-externo p {
+  position: absolute;
+  font-size: 1.1em;
+  bottom: 0.5em;
+  color: white;
+  margin-left: 0.5em;
+  text-shadow: 1px 1px 1px black;
 }
 main .container-interno {
   width: 100vw;
@@ -309,4 +352,46 @@ main i {
 
 .fa-heart {
   left: 0.3em;
+}
+
+.fa-star, .fa-star-half-stroke {
+  position: absolute;
+  bottom: 0;
+  background: none;
+  color: yellow;
+  font-size: 1.2em;
+}
+
+.star1 {
+  left: 1.5em;
+}
+
+.star2 {
+  left: 2.6em;
+}
+
+.star3 {
+  left: 3.7em;
+}
+
+.star4 {
+  left: 4.8em;
+}
+
+.star5 {
+  left: 5.9em;
+}
+
+.star6 {
+  left: 5.9em;
+  display: none;
+}
+
+.description, .description2 {
+  background-image: linear-gradient(to left, rgba(125, 28, 169, 0.9), rgba(117, 17, 121, 0.5));
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 0.8em;
 }/*# sourceMappingURL=style.css.map */

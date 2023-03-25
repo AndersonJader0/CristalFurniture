@@ -48,20 +48,28 @@
         </div>
 
         <div class="m-left">
-            <p><i class="fa-solid fa-magnifying-glass"></i>Pesquisar</p>
-            <p><i class="fa-solid fa-cart-shopping top"></i>Ver carrinho</p>
-            <p><i class="fa-solid fa-heart top"></i></i>Favoritos</p>
+            <p class="p-left" onclick="pesquisar()"><i class="fa-solid fa-magnifying-glass"></i>Pesquisar</p>
+            <form>
+                <input type="search" id="search" name="search" placeholder="Digite aqui">
+            </form>
+            <p class="p-left" onclick="verCarrinho()"><i class="fa-solid fa-cart-shopping top"></i>Ver carrinho</p>
+            <div class="carrinho">
+                
+            </div>
+            <p class="p-left"><i class="fa-solid fa-heart top"></i></i>Favoritos</p>
+            <p class="p-left contatos"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-solid fa-envelope"></i></p>
         </div>
     </nav>
 
     <header>
+        <h2 class="title">Confira já as novidades!</h2>
         <div class="novidades">
         <img src="/imgs/photo1.png">
         <img src="/imgs/photo2.png">
         <img src="/imgs/photo3.png">
         </div>
 
-        <h2 class="title">Por sessão</h2>
+        <h2 class="title">Faça o filtro por sessão</h2>
 
         <div class="groups">
             <div class="gp-content">
@@ -109,11 +117,11 @@
         </div>
     </header>
     <main>
-        <h2 class="m-title">Móveis</h2>
+        <h2 class="m-title">Confira móveis com alta avaliação</h2>
 
         <div class="container-externo">
-            <i class="fa-solid fa-heart top" onclick="heart()"></i>
-            <i class="fa-solid fa-cart-shopping top" onclick="car()"></i>
+            <i class="fa-solid fa-heart top heart" onclick="heart()"></i>
+            <i class="fa-solid fa-cart-shopping top car" onclick="car()"></i>
             <i class="fa-solid fa-angle-right" onclick="change('direita')"></i>
             <i class="fa-solid fa-angle-left" onclick="change('esquerda')"></i>
             <div class="container-interno">
@@ -123,7 +131,16 @@
                 <img src="/imgs/conjunto.jpg">
                 <img src="/imgs/shelve.jpg">
             </div>
+            <p class="points">4.7</p>
+            <i class="fa-solid fa-star star1"></i>
+            <i class="fa-solid fa-star star2"></i>
+            <i class="fa-solid fa-star star3"></i>
+            <i class="fa-solid fa-star star4"></i>
+            <i class="fa-solid fa-star star5"></i>
+            <i class="fa-solid fa-star-half-stroke star6"></i>
         </div>
+
+        <p class="description">Sofa R$359,99</p>
     </main>
 </body>
 </html>
