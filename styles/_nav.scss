@@ -34,6 +34,7 @@
     height: 8vh;
     i{
         font-size: 1.4em;
+        color: #222;
     }
     h2{
         background-color: #8c52ff;
@@ -140,5 +141,39 @@
         outline: none;
         border: 1px solid #8c52ff;
         padding: 0 1em;
+    }
+}
+
+.carrinho{
+    width: 0%;
+    height: 86vh;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 14vh;
+    z-index: 3;
+    color:#8c52ff;
+    overflow: hidden;
+    transition: all .2s ease;
+    h2{
+        text-align: center;
+        padding: .5em 0;
+        font-weight: 600;
+    }
+
+    img{
+        margin-bottom: .2em;
+        height: 0;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .c-carrinho{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }

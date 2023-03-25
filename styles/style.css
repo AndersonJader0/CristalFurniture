@@ -35,6 +35,7 @@
 }
 .m-main i {
   font-size: 1.4em;
+  color: #222;
 }
 .m-main h2 {
   background-color: #8c52ff;
@@ -135,6 +136,37 @@
   outline: none;
   border: 1px solid #8c52ff;
   padding: 0 1em;
+}
+
+.carrinho {
+  width: 0%;
+  height: 86vh;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 14vh;
+  z-index: 3;
+  color: #8c52ff;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.carrinho h2 {
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 600;
+}
+.carrinho img {
+  margin-bottom: 0.2em;
+  height: 0;
+}
+.carrinho p {
+  text-align: center;
+  font-weight: 600;
+}
+.carrinho .c-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 header {
@@ -282,6 +314,10 @@ header .best-selled .name {
   bottom: 0;
 }
 
+.new4, .new5, .new6 {
+  display: none;
+}
+
 main {
   font-family: "Poppins";
 }
@@ -316,6 +352,10 @@ main .container-interno {
 }
 main img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 main i {
   font-size: 2em;
@@ -394,4 +434,42 @@ main i {
   font-weight: 600;
   font-size: 1.1em;
   padding: 0.8em;
+}
+
+@media screen and (min-width: 438px) {
+  main .container-externo {
+    max-width: 438px;
+    margin: 0 auto;
+  }
+  main img {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1000px) {
+  nav .m-secondary {
+    height: 4.1em;
+  }
+  body, html {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  header .novidades {
+    height: 15em;
+  }
+  header .new4, header .new5, header .new6 {
+    display: block;
+  }
+  header .groups {
+    height: 10em;
+  }
+  header .best-selled .sofa {
+    height: 18em;
+  }
+  header .best-selled .bed {
+    height: 18em;
+  }
+  .i2 {
+    left: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

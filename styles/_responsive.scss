@@ -1,0 +1,56 @@
+@media screen and (min-width: 438px){
+    main{
+        .container-externo{
+            max-width: 438px;
+            margin: 0 auto;
+        }
+
+        img{
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    nav{
+        .m-secondary{
+            height: 4.1em;
+        }
+    }
+
+    body, html{
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    header{
+        .novidades{
+            height: 15em;
+        }
+
+        .new4, .new5, .new6{
+            display: block;
+        }
+
+        .groups{
+            height: 10em;
+        }
+    }
+
+    header{
+        .best-selled{
+            .sofa{
+                height: 18em;
+            }
+            .bed{
+                height: 18em;
+            }
+        }
+    }
+
+    .i2{
+        left: 100%;
+    }
+
+}

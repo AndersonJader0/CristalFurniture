@@ -3,6 +3,7 @@ var carrinho = new Array();
 var favoritos = new Array();
 var listaProdutos = '';
 var produtoAtualNome = new Array();
+var valueQuantity = 0;
 
 function change(direction){
     var documento = document.querySelector('.container-interno');
@@ -144,23 +145,72 @@ var isInCar = false;
 
 function car(){
     var car = document.querySelector('.car');
+    var quantity = document.querySelector('.quantity');
+
+    /* PARTE DO CARRINHO */
+    //imgs
+    var img1 = document.querySelector('.img1');
+    var img2 = document.querySelector('.img2');
+    var img3 = document.querySelector('.img3');
+    var img4 = document.querySelector('.img4');
+    var img5 = document.querySelector('.img5');
+
+    //textos
+    var p1 = document.querySelector('.p1');
+    var p2 = document.querySelector('.p2');
+    var p3 = document.querySelector('.p3');
+    var p4 = document.querySelector('.p4');
+    var p5 = document.querySelector('.p5');
+
+
+
     if(isInCar == false){
     car.style.color = '#691eff';
     isInCar = true;
         if(value == 0){
             carrinho.push('Lorem ipsum1');
+            valueQuantity += 1;
+            quantity.innerHTML = valueQuantity;
+            img1.src = '/imgs/sofa.jpg';
+            img1.style.width = "5em";
+            img1.style.height = "5em";
+            p1.innerHTML = 'Lorem ipsum1';
             // alert(carrinho);
         }else if(value == 100){
             carrinho.push('Lorem ipsum2');
+            valueQuantity += 1;
+            quantity.innerHTML = valueQuantity;
+            img2.src = '/imgs/bed.jpg';
+            img2.style.width = "5em";
+            img2.style.height = "5em";
+            p2.innerHTML = 'Lorem ipsum2';
             // alert(carrinho);
         }else if(value == 200){
             carrinho.push('Lorem ipsum3');
+            valueQuantity += 1;
+            quantity.innerHTML = valueQuantity;
+            img3.src = '/imgs/table.jpg';
+            img3.style.width = "5em";
+            img3.style.height = "5em";
+            p3.innerHTML = 'Lorem ipsum3';
             // alert(carrinho);
         }else if(value == 300) {
             carrinho.push('Lorem ipsum4');
+            valueQuantity += 1;
+            quantity.innerHTML = valueQuantity;
+            img4.src = '/imgs/furniture.jpg';
+            img4.style.width = "5em";
+            img4.style.height = "5em";
+            p4.innerHTML = 'Lorem ipsum4';
             // alert(carrinho);
         }else if(value == 400){
             carrinho.push('Lorem ipsum5');
+            valueQuantity += 1;
+            quantity.innerHTML = valueQuantity;
+            img5.src = '/imgs/conjunto.jpg';
+            img5.style.width = "5em";
+            img5.style.height = "5em";
+            p5.innerHTML = 'Lorem ipsum5';
             // alert(carrinho);
         }
     }else{
@@ -168,18 +218,43 @@ function car(){
         isInCar = false;
         if(value == 0){
             carrinho.splice(carrinho.indexOf("Lorem ipsum1"), 1);
+            valueQuantity -= 1;
+            quantity.innerHTML = valueQuantity;
+            img1.src = '';
+            img1.style.height = "0em";
+            p1.innerHTML = '';
             // alert(carrinho);
         }else if(value == 100){
             carrinho.splice(carrinho.indexOf("Lorem ipsum2"), 1);
+            valueQuantity -= 1;
+            quantity.innerHTML = valueQuantity;
+            img2.src = '';
+            img2.style.height = "0em";
+            p2.innerHTML = '';
             // alert(carrinho);
         }else if(value == 200){
             carrinho.splice(carrinho.indexOf("Lorem ipsum3"), 1);
+            valueQuantity -= 1;
+            quantity.innerHTML = valueQuantity;
+            img3.src = '';
+            img3.style.height = "0em";
+            p3.innerHTML = '';
             // alert(carrinho);
         }else if(value == 300) {
             carrinho.splice(carrinho.indexOf("Lorem ipsum4"), 1);
+            valueQuantity -= 1;
+            quantity.innerHTML = valueQuantity;
+            img4.src = '';
+            img4.style.height = "0em";
+            p4.innerHTML = '';
             // alert(carrinho);
         }else if(value == 400){
             carrinho.splice(carrinho.indexOf("Lorem ipsum5"), 1);
+            valueQuantity -= 1;
+            quantity.innerHTML = valueQuantity;
+            img5.src = '';
+            img5.style.height = "0em";
+            p5.innerHTML = '';
             // alert(carrinho);
         }
     }
@@ -228,41 +303,38 @@ function heart(){
     }
 }
 
+
+
 //VER CARRINHO
 var carOpen = false;
-var alreadyOpen = false;
+
 function verCarrinho(){
     var lista = document.querySelector('.carrinho');
-    if(carOpen == false && alreadyOpen == false){
-    alert(carrinho.length);
-    lista.style.padding = '.5em 0 .5em .5em';
-    for(var i = 0; i < carrinho.length; i++){
-        listaProdutos += '<p onclick="deletarCarrinho('+ i + ')">' + carrinho[i] + '<i class="fa-solid fa-x"></i>'+'</p>';
-        lista.innerHTML = listaProdutos;
-    }
-    alreadyOpen = true;
-    carOpen = true;
-    }else if(carOpen == true){
-        lista.innerHTML = '';
-        carOpen = false;
-        lista.style.padding = '0';
-    }else if(carOpen == false && alreadyOpen == true){
-        lista.style.padding = '0 0 0 .8em';
-        lista.innerHTML = listaProdutos;
+    if(carOpen == false && isOpen == false){
+        lista.style.width = "50%";
         carOpen = true;
+    }else if(carOpen == true){
+        lista.style.width = '0';
+        carOpen = false;
     }
 }
 
-function deletarCarrinho(number){
-    if(number == 0){
-        alert('Em desenvolvimento deletar item 1');
-    }else if(number == 1){
-        alert('Em desenvolvimento deletar item 2');
-    }else if(number == 2){
-        alert('Em desenvolvimento deletar item 3');
-    }else if(number == 3){
-        alert('Em desenvolvimento deletar item 4');
-    }else if(number == 4){
-        alert('Em desenvolvimento deletar item 5');
+var isOpen = false;
+
+function openTeste(){
+    var menuLeft = document.querySelector('.m-left');
+    var menuX = document.querySelector('.fa-xmark');
+    var sandwich = document.querySelector('.fa-bars');
+
+    if(isOpen == false && carOpen == false){
+    menuLeft.style.height = "86vh";
+    menuX.style.display = 'flex';
+    sandwich.style.display = 'none';
+    isOpen = true;
+    }else{
+        menuLeft.style.height = "0";
+        isOpen = false;
+        menuX.style.display = 'none';
+        sandwich.style.display = 'flex';
     }
 }

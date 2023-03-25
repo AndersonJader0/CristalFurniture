@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <!--JAVASCRIPT-->
     <script src="/scripts/script-moveis.js"></script>
-    <script src="/scripts/menu-lateral.js"></script>
     <!--FONTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,12 +33,15 @@
             <i class="fa-solid fa-xmark" onclick="openTeste()"></i>
             <h2>Cristal Furniture</h2>
             <p>Login<i class="fa-solid fa-user"></i></p>
+            <p><span class="quantity">0</span><i class="fa-sharp fa-solid fa-cart-shopping" onclick="verCarrinho()"></i></p>
         </div>
 
         <div class="m-secondary">
             <p>Lorem ipsum</p>
             <p>Lorem ipsum</p>
             <p>Lorem ipsum<i class="fa-solid fa-sort-down"></i></p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
             <p>Lorem ipsum</p>
             <p>Lorem ipsum</p>
             <p>Lorem ipsum</p>
@@ -52,12 +54,33 @@
             <form>
                 <input type="search" id="search" name="search" placeholder="Digite aqui">
             </form>
-            <p class="p-left" onclick="verCarrinho()"><i class="fa-solid fa-cart-shopping top"></i>Ver carrinho</p>
-            <div class="carrinho">
-                
-            </div>
-            <p class="p-left"><i class="fa-solid fa-heart top"></i></i>Favoritos</p>
+            
             <p class="p-left contatos"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-solid fa-envelope"></i></p>
+        </div>
+
+        <div class="carrinho">
+            <h2>Seus móveis</h2>
+            <div class="c-carrinho">
+                <img src="" class="img1">
+                <p class="p1"></p>
+            </div>
+            <div class="c-carrinho">
+                <img src="" class="img2">
+                <p class="p2"></p>
+            </div>
+            <div class="c-carrinho">
+                <img src="" class="img3">
+                <p class="p3"></p>
+            </div>
+            <div class="c-carrinho">
+                <img src="" class="img4">
+                <p class="p4"></p>
+                <hr>
+            </div>
+            <div class="c-carrinho">
+                <img src="" class="img5">
+                <p class="p5"></p>
+            </div>
         </div>
     </nav>
 
@@ -67,6 +90,9 @@
         <img src="/imgs/photo1.png">
         <img src="/imgs/photo2.png">
         <img src="/imgs/photo3.png">
+        <img src="/imgs/photo1.png" class="new4">
+        <img src="/imgs/photo2.png" class="new5">
+        <img src="/imgs/photo3.png" class="new6">
         </div>
 
         <h2 class="title">Faça o filtro por sessão</h2>
@@ -76,7 +102,6 @@
                 <div class="gp beds">
                 </div>
                 <p>Beds</p>
-                
             </div>
 
             <div class="gp-content">
@@ -102,6 +127,37 @@
                 </div>
                 <p>Shelves</p>
             </div>
+
+            <div class="gp-content">
+                <div class="gp beds">
+                </div>
+                <p>Beds</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp sofas">
+                </div>
+                <p>Sofas</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp chairs">
+                </div>
+                <p>Chairs</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp tables">
+                </div>
+                <p>Tables</p>
+            </div>
+
+            <div class="gp-content">
+                <div class="gp shelves">
+                </div>
+                <p>Shelves</p>
+            </div>
+
         </div>
 
         <h2 class="t-best-selled">Os mais vendidos</h2>
@@ -125,11 +181,11 @@
             <i class="fa-solid fa-angle-right" onclick="change('direita')"></i>
             <i class="fa-solid fa-angle-left" onclick="change('esquerda')"></i>
             <div class="container-interno">
-                <img src="/imgs/sofaScroll.jpg">
-                <img src="/imgs/bed2.jpg">
-                <img src="/imgs/furniture.jpg">
-                <img src="/imgs/conjunto.jpg">
-                <img src="/imgs/shelve.jpg">
+                <img src="/imgs/sofa.jpg" class="i1">
+                <img src="/imgs/bed2.jpg" class=i2>
+                <img src="/imgs/furniture.jpg" class="i3">
+                <img src="/imgs/conjunto.jpg" class="i4">
+                <img src="/imgs/shelve.jpg" class="i5">
             </div>
             <p class="points">4.7</p>
             <i class="fa-solid fa-star star1"></i>
